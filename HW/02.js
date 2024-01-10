@@ -1,29 +1,25 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 
 const room = new Map();
-room.set("320", {
-  "教室": "320",
+room.set("e320", {
+  "教室": "e320",
   "功能": "多媒體教室",
 });
-room.set("319", {
-  "教室": "319",
+room.set("e19", {
+  "教室": "e319",
   "功能": "嵌入式實驗室",
 });
 
 const router = new Router();
 router
-  .get("", (context) => {
-    context.response.body = `
-    <html>
-        <body>
-        </body>
-    </html>`;
+  .get("/", (context) => {
+    context.response.body = "Hello world!";
   })
   .get("/nqu", (context) => {
     context.response.body = `
     <html>
         <body>
-            <a href="https://www.nqu.edu.tw/">NQU</a>
+            <a href="https://www.nqu.edu.tw/">金門大學</a>
         </body>
     </html>`;
   })
@@ -31,7 +27,7 @@ router
     context.response.body = `
     <html>
         <body>
-            <a href="https://csie.nqu.edu.tw/">NQU_CSIE</a>
+            <a href="https://csie.nqu.edu.tw/">金門大學資工系</a>
         </body>
     </html>`;
   })
