@@ -62,6 +62,61 @@ function layout(title, content) {
     <html>
     <head>
       <title>${title}</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          padding: 0;
+          background-color: #f4f4f4;
+        }
+        h1 {
+          color: #333;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+        li {
+          background-color: #fff;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        a {
+          text-decoration: none;
+          color: #007bff;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="text"],
+        textarea {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        input[type="submit"]:hover {
+          background-color: #0056b3;
+        }
+      </style>
     </head>
     <body>
       <div id="content">
@@ -71,4 +126,5 @@ function layout(title, content) {
     </html>
   `;
 }
+
 
