@@ -57,9 +57,6 @@ export function deleteConfirmation(contact) {
   `);
 }
 
-// ... (layout function remains unchanged)
-
-
 
 
 function layout(title, content) {
